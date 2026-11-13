@@ -1,0 +1,21 @@
+{
+    "name": "DLCode GS1 QR Codes",
+    "summary": "Turn product barcodes into GS1 Digital Link QR codes with DLCode",
+    "description": "Sync product variants with a GTIN barcode to DLCode and show their GS1 QR code. Works with Odoo 17.0 and 18.0.",
+    "version": "17.0.1.0.0",
+    "category": "Inventory/Products",
+    "author": "DLCode",
+    "website": "https://dlcode.org",
+    "license": "LGPL-3",
+    "depends": ["product", "base_setup"],
+    "external_dependencies": {"python": ["requests"]},
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_config_settings_views.xml",
+        "views/product_views.xml",
+        "data/actions.xml",
+    ],
+    "images": ["static/description/icon.png"],
+    "installable": True,
+    "application": False,
+}
