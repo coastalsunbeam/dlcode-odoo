@@ -1,0 +1,15 @@
+{
+    "name": "DLCode Lot Recalls",
+    "summary": "Mark a lot recalled in Odoo and DLCode shows the recall notice on the next scan of its GS1 QR code",
+    "description": "Adds a Recalled checkbox and a shopper note to each lot. Saving it turns the recall on or off for that lot in DLCode. Other lots keep working. Needs the DLCode GS1 QR Codes app and a paid DLCode pack. Works with Odoo 17.0 and 18.0.",
+    "version": "17.0.1.0.0",
+    "category": "Inventory/Inventory",
+    "author": "DLCode",
+    "website": "https://dlcode.org/guides/sync-recalls-from-odoo",
+    "license": "LGPL-3",
+    "depends": ["dlcode_gs1_qr", "stock"],
+    "data": ["views/stock_lot_views.xml"],
+    "images": ["static/description/icon.png"],
+    "installable": True,
+    "application": False,
+}
